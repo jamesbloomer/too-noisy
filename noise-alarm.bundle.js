@@ -24,11 +24,15 @@ getUserMedia(function(err, stream) {
 
     // Rather than speaking the threshold is the unacceptable level
     harkEvents.on('speaking', function() {
-        document.querySelector("#status").textContent = "Too noisy!";
+        var el = document.querySelector("#status");
+        el.textContent = "Too noisy!";
+        el.setAttribute("class", "noisy");
     });
 
     harkEvents.on('stopped_speaking', function() {
-        document.querySelector("#status").textContent = "Nice and quiet";
+       var el = document.querySelector("#status");
+        el.textContent = "Nice and quiet";
+        el.setAttribute("class", "quiet");
     });
 });
 
