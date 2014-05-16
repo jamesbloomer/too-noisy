@@ -1,0 +1,19 @@
+{
+  "name": "noise-alarm",
+  "version": "0.0.0",
+  "description": "Plays a siren when it gets too noisy",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "keywords": [
+    "sound"
+  ],
+  "author": "James Bloomer",
+  "license": "MIT",
+  "dependencies": {
+    "hark": "^0.2.0",
+    "getusermedia": "^0.2.2",
+    "query-string": "^0.4.0"
+  }
+}
