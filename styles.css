@@ -1,14 +1,17 @@
+body {
+}
+
 .centre {
+    color: white;
     width: 50%;
     margin: 0 auto;
+    font-size: 10em;
 }
 
 .noisy {
-    font-size: 4em;
-    color: red;
+    background-color: red;
 }
 
 .quiet {
-    font-size: 1em;
-    color: green;
+    background-color: green;
 }
